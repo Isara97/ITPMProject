@@ -1,0 +1,144 @@
+.body{
+    padding: 0;
+    margin: 0;
+}
+
+/*---------Header--------------*/
+.header h1{
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    background-color: #008487;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+
+.himage{
+    height: 40px;
+    padding-left: 30px;
+}
+
+
+/* -------------- Vertical navigation bar -----------------*/
+.menu{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #00296b;
+    position: relative;
+    height: 100%;
+    border-right: 5px solid #F1C40F;
+    float: left;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu ul li{
+    padding: 10px;
+    position: relative;
+    width: 200px;
+    vertical-align: middle;
+    background-color: #00296b;
+    border-top: 1px solid #d0dae0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.menu ul li:hover{
+    background-color: #2ECC71;
+}
+
+.menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu > ul > li{
+    border-right: 5px solid #F1C40F;
+}
+
+.menu ul ul{
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    border-left: 5px solid #f27d10;
+    visibility: hidden;
+    left: 100%;
+    top: -2%;
+}
+
+.menu > ul > li:nth-of-type(2)::after{
+    content: '';
+    position: absolute;
+    float: right;
+    margin-left: 35%;
+    color: white;
+    font-size: 20px;
+}
+
+
+.dash{
+    color: white;
+}
+
+.fa-heart-o{
+    margin: 3px;
+    color: red;
+}
+
+/*----------------------------- Dashboard Content------------------------------*/
+
+.content{
+    width: auto;
+    margin-left: 200px;
+    height: 100%;
+    background-color: #fff;
+    padding: 15px;
+}
+
+h1{
+    color: #555555;
+}
+
+
+/* ---------------------------------- Dashboard ---------------------------------------*/
+.box{
+    margin-top: 15px;
+}
+
+.box .box-top{
+    color: #fff;
+    text-shadow: 0px 0px 1px #ddd;
+    background-color: #2980b9;
+    padding: 5px 15px;
+    font-weight: 300;
+}
+
+.box .box-panel{
+    padding: 15px;
+    background-color: #e5feff;
+}
+
+/* -------------------- row 2 dash board pie chart------------------------*/
+
+.chart{
+    padding: 7px;
+    margin-top: 20px;
+}
